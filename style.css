@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+body{
+    font-family: 'Otomanopee One', sans-serif;
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+    color: #8b0000;
+}
+
+h2{
+    text-align: center;
+    color: #8b0000;
+}
+
+#resultsDisplay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    border: 2px solid #8b0000;
+}
+
+#dicesResults{
+    color: #8b0000;
+    margin-right: 45px;
+}
+
+#dicesResults div ul{
+    list-style: none;
+}
+
+#dicesBox div{
+    margin-bottom: 50px;
+}
+
+#dicesBox div ul li{
+    list-style:decimal;
+    color: #8b0000;
+}
+
+#dicesBox div ul li:nth-child(n){
+    background-color: #8b0000;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+#dicesBox div ul li:nth-child(1){
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 500px){
+    
+    #resultsDisplay{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
